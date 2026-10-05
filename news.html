@@ -1,268 +1,53 @@
 <!DOCTYPE html>
-<html lang="zh-Hant">
-<head>
-<meta charset="UTF-8">
+<html lang="zh-Hant"><head><meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>最新消息 | Fencing Diary 劍擊日記</title>
 <meta name="description" content="一個屬於香港人的劍擊平台">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🤺</text></svg>">
 <style>
-* { margin:0; padding:0; box-sizing:border-box; }
-body { background:#0b1220; color:#e8edf5; font-family:'Segoe UI','Noto Sans TC','Microsoft JhengHei',system-ui,sans-serif; line-height:1.7; }
-a { color:#e8b23a; text-decoration:none; }
-a:hover { text-decoration:underline; }
-header { background:#0e1626; border-bottom:1px solid #1e2a44; position:sticky; top:0; z-index:10; }
-.nav-inner { max-width:960px; margin:0 auto; padding:14px 20px; display:flex; align-items:center; justify-content:space-between; gap:16px; flex-wrap:wrap; }
-.brand { font-weight:800; font-size:1.15rem; color:#fff; }
-.brand span { color:#e8b23a; }
-nav { display:flex; gap:18px; flex-wrap:wrap; }
-nav a { color:#93a1b5; font-size:.95rem; }
-nav a.active { color:#e8b23a; font-weight:700; }
-main { max-width:960px; margin:0 auto; padding:28px 20px 60px; }
-.hero { padding:56px 0 40px; text-align:center; }
-.hero h1 { font-size:2.3rem; color:#fff; letter-spacing:1px; }
-.hero .tagline { color:#93a1b5; margin-top:10px; font-size:1.1rem; }
-.hero .badge { display:inline-block; margin-top:18px; padding:6px 16px; border:1px solid #e8b23a; color:#e8b23a; border-radius:999px; font-size:.85rem; }
-.card { background:#131c2e; border:1px solid #1e2a44; border-radius:12px; padding:18px 20px; margin-bottom:14px; }
-.card h2 { font-size:1.05rem; color:#fff; margin-bottom:6px; }
-.card h2 a { color:#fff; }
-.card h2 a:hover { color:#e8b23a; text-decoration:none; }
-.meta { color:#93a1b5; font-size:.82rem; margin-bottom:6px; }
-.summary { color:#e8edf5; font-size:.95rem; }
-.tag { display:inline-block; background:#1c2a4a; color:#e8b23a; border-radius:6px; padding:2px 8px; font-size:.75rem; margin:6px 4px 0 0; }
-h1.page-title { font-size:1.8rem; color:#fff; margin-bottom:24px; border-bottom:3px solid #e8b23a; padding-bottom:10px; }
-.article-body { font-size:1.02rem; }
-.article-body p { margin-bottom:14px; }
-.source { margin-top:20px; padding-top:14px; border-top:1px solid #1e2a44; color:#93a1b5; font-size:.85rem; }
-.back { display:inline-block; margin-bottom:20px; color:#93a1b5; font-size:.9rem; }
-footer { border-top:1px solid #1e2a44; background:#0e1626; padding:26px 20px; text-align:center; color:#93a1b5; font-size:.82rem; }
-footer a { color:#e8b23a; }
-.disclaimer { margin-top:8px; font-size:.75rem; color:#64748b; }
-@media (max-width:640px) {
-  .hero h1 { font-size:1.7rem; }
-  nav { gap:12px; }
-}
-</style>
-</head>
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:#0b1220;color:#e8edf5;font-family:'Segoe UI','Noto Sans TC','Microsoft JhengHei',system-ui,sans-serif;line-height:1.8}
+a{color:#e8b23a;text-decoration:none} a:hover{text-decoration:underline}
+.wrap{max-width:900px;margin:0 auto;padding:28px 20px 60px}
+header.site{border-bottom:1px solid #22314a;padding:18px 20px;background:#0f172a}
+header.site .inner{max-width:900px;margin:0 auto;display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap}
+header.site .brand{font-size:20px;font-weight:800;color:#e8edf5}
+header.site .brand span{color:#e8b23a}
+nav a{margin-left:16px;font-size:14px;color:#93a1b5}
+.hero{padding:34px 0 22px}
+.hero h1{font-size:29px;line-height:1.35;margin-bottom:10px}
+.hero p{color:#93a1b5;font-size:15px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:16px;margin-top:20px}
+.card{background:#131c2e;border:1px solid #22314a;border-radius:12px;padding:16px}
+.card .date{font-size:12px;color:#93a1b5;margin-bottom:6px}
+.card h3{font-size:15.5px;line-height:1.5;font-weight:700}
+.card p{color:#93a1b5;font-size:13px;margin-top:8px}
+h2.section{font-size:19px;margin:34px 0 6px;padding-left:10px;border-left:4px solid #e8b23a}
+article h1{font-size:25px;line-height:1.4;margin-bottom:10px}
+article .meta{color:#93a1b5;font-size:13px;margin-bottom:20px}
+article p{margin:12px 0}
+article img{max-width:100%;height:auto;border-radius:10px;margin:12px 0}
+article ul,article ol{margin:12px 0 12px 22px}
+blockquote{border-left:3px solid #e8b23a;padding:8px 14px;color:#93a1b5;margin:14px 0;background:#101a2b}
+footer.site{border-top:1px solid #22314a;color:#93a1b5;font-size:13px;text-align:center;padding:22px}
+.btn{display:inline-block;background:#e8b23a;color:#1a1408;font-weight:800;padding:10px 18px;border-radius:8px;margin-top:14px}
+</style></head>
 <body>
-<header><div class="nav-inner">
-  <div class="brand">🤺 Fencing&nbsp;Diary&nbsp;劍擊日記</div>
-  <nav><a href="index.html">首頁</a><a href="news.html" class="active">最新消息</a><a href="club-guide.html">劍會指南</a><a href="about.html">關於我們</a></nav>
+<header class="site"><div class="inner">
+  <div class="brand">🤺 Fencing <span>Diary</span></div>
+  <nav><a href="index.html">首頁</a><a href="news.html">最新消息</a><a href="club-guide.html">劍會指南</a><a href="about.html">關於</a></nav>
 </div></header>
-<main>
-
-<h1 class="page-title">最新消息</h1>
-<p style="color:#93a1b5;margin-bottom:20px">香港劍擊新聞每日自動彙整 — 共 41 篇</p>
-<div class="card">
-  <div class="meta">📅 2026年09月09日 · Google News</div>
-  <h2><a href="news/01-香港劍擊運動員示範訓練-積極備戰亞運會.html">香港劍擊運動員示範訓練 積極備戰亞運會</a></h2>
-  <div class="summary">香港劍擊運動員近日進行示範訓練，為即將到來的亞運會積極備戰。</div>
-  <span class="tag">香港劍擊</span><span class="tag">亞運會</span><span class="tag">示範訓練</span><span class="tag">備戰</span>
-</div><div class="card">
-  <div class="meta">📅 2026年09月04日 · Google News</div>
-  <h2><a href="news/02-香港劍擊隊出征亞運-力爭佳績.html">香港劍擊隊出征亞運 力爭佳績</a></h2>
-  <div class="summary">香港劍擊隊即將出征亞運會，目標係爭取頂峰成績。</div>
-  <span class="tag">香港劍擊</span><span class="tag">亞運</span><span class="tag">體育</span>
-</div><div class="card">
-  <div class="meta">📅 2026年09月04日 · Google News</div>
-  <h2><a href="news/03-香港劍擊運動員積極備戰亞運會.html">香港劍擊運動員積極備戰亞運會</a></h2>
-  <div class="summary">香港劍擊運動員正密鑼緊鼓備戰亞運會，力爭佳績。</div>
-  <span class="tag">香港劍擊</span><span class="tag">亞運會</span><span class="tag">備戰</span><span class="tag">體育</span>
-</div><div class="card">
-  <div class="meta">📅 2026年09月04日 · Google News</div>
-  <h2><a href="news/04-ai劍擊教練登場-提升出劍精準度.html">AI劍擊教練登場 提升出劍精準度</a></h2>
-  <div class="summary">人工智能技術應用於劍擊訓練，有望協助運動員提升出劍精準度。</div>
-  <span class="tag">AI</span><span class="tag">劍擊</span><span class="tag">訓練</span><span class="tag">科技</span>
-</div><div class="card">
-  <div class="meta">📅 2026年09月04日 · Google News</div>
-  <h2><a href="news/05-名古屋亞運-蔡俊彥盼與張家朗會師男花決賽-總教練望雙位數獎牌.html">名古屋亞運｜蔡俊彥盼與張家朗會師男花決賽 總教練望雙位數獎牌</a></h2>
-  <div class="summary">港隊劍擊代表蔡俊彥期望在名古屋亞運與張家朗會師男子花劍決賽，總教練則以雙位數獎牌為目標，強調每個劍種都有機會奪牌。</div>
-  <span class="tag">名古屋亞運</span><span class="tag">香港劍擊</span><span class="tag">蔡俊彥</span><span class="tag">張家朗</span>
-</div><div class="card">
-  <div class="meta">📅 2026年09月04日 · Google News</div>
-  <h2><a href="news/06-劍擊港隊亞運目標雙位數獎牌-蔡俊彥康復中冀衝雙金.html">劍擊港隊亞運目標雙位數獎牌 蔡俊彥康復中冀衝雙金</a></h2>
-  <div class="summary">劍擊港隊力爭亞運雙位數獎牌，蔡俊彥正加緊康復，期望衝擊雙金，並期待在個人賽決賽與張家朗交手。</div>
-  <span class="tag">劍擊</span><span class="tag">亞運</span><span class="tag">港隊</span><span class="tag">蔡俊彥</span>
-</div><div class="card">
-  <div class="meta">📅 2026年09月03日 · Google News</div>
-  <h2><a href="news/07-劍擊世錦賽門票下周二開售-票價250至1500港元.html">劍擊世錦賽門票下周二開售 票價250至1500港元</a></h2>
-  <div class="summary">劍擊世錦賽門票將於下周二開售，票價由250至1500港元不等。</div>
-  <span class="tag">劍擊</span><span class="tag">世錦賽</span><span class="tag">門票</span><span class="tag">香港</span>
-</div><div class="card">
-  <div class="meta">📅 2026年09月03日 · Google News</div>
-  <h2><a href="news/08-香港首度主辦世界劍擊錦標賽.html">香港首度主辦世界劍擊錦標賽</a></h2>
-  <div class="summary">香港將首次主辦世界劍擊錦標賽，這項盛事標誌著香港劍擊運動發展的重要里程碑。</div>
-  <span class="tag">香港</span><span class="tag">劍擊</span><span class="tag">世界錦標賽</span><span class="tag">體育</span>
-</div><div class="card">
-  <div class="meta">📅 2026年09月03日 · Google News</div>
-  <h2><a href="news/09-劍擊-專訪-超強好勝心煉成世少冠軍-何承謙劍指更大舞台.html">劍擊・專訪｜超強好勝心煉成世少冠軍 何承謙劍指更大舞台</a></h2>
-  <div class="summary">香港少年劍手何承謙憑藉超強好勝心，成功奪得世少冠軍，並將目標鎖定更大型的國際賽事。</div>
-  <span class="tag">劍擊</span><span class="tag">何承謙</span><span class="tag">世少冠軍</span><span class="tag">香港運動員</span>
-</div><div class="card">
-  <div class="meta">📅 2026年09月01日 · Google News</div>
-  <h2><a href="news/10-蔡俊彥的多面人生-從改寫香港劍擊歷史到唱廣東歌-兩個世界他都全力以赴.html">蔡俊彥的多面人生：從改寫香港劍擊歷史到唱廣東歌，兩個世界他都全力以赴</a></h2>
-  <div class="summary">香港劍擊運動員蔡俊彥不僅在劍擊場上改寫歷史，更在音樂領域展現才華，兩個世界他都全力以赴。</div>
-  <span class="tag">蔡俊彥</span><span class="tag">香港劍擊</span><span class="tag">廣東歌</span><span class="tag">運動員</span>
-</div><div class="card">
-  <div class="meta">📅 2026年08月31日 · Google News</div>
-  <h2><a href="news/11-何承謙劍擊挑戰盃封王-首奪本地成年組冠軍.html">何承謙劍擊挑戰盃封王 首奪本地成年組冠軍</a></h2>
-  <div class="summary">何承謙在劍擊挑戰盃中奪冠，首次贏得本地成年組冠軍。</div>
-  <span class="tag">劍擊</span><span class="tag">何承謙</span><span class="tag">挑戰盃</span><span class="tag">香港</span>
-</div><div class="card">
-  <div class="meta">📅 2026年08月31日 · Google News</div>
-  <h2><a href="news/12-名古屋亞運會2026香港運動員名單及賽程總覽.html">名古屋亞運會2026香港運動員名單及賽程總覽</a></h2>
-  <div class="summary">名古屋亞運會2026年舉行，香港運動員名單及比賽日期賽程時間表已公佈。</div>
-  <span class="tag">名古屋亞運</span><span class="tag">香港運動員</span><span class="tag">賽程</span><span class="tag">2026</span>
-</div><div class="card">
-  <div class="meta">📅 2026年08月25日 · Google News</div>
-  <h2><a href="news/13-梁天晴梁千雨兄弟檔首戰亞運-分別出戰男佩及男花團體賽.html">梁天晴梁千雨兄弟檔首戰亞運 分別出戰男佩及男花團體賽</a></h2>
-  <div class="summary">香港劍擊隊嘅梁天晴同梁千雨兄弟將首次出戰亞運，分別參加男佩及男花團體賽。</div>
-  <span class="tag">劍擊</span><span class="tag">亞運</span><span class="tag">梁天晴</span><span class="tag">梁千雨</span>
-</div><div class="card">
-  <div class="meta">📅 2026年08月24日 · Google News</div>
-  <h2><a href="news/14-劍擊世錦賽-男花港隊主場一劍不敵-世一-意大利-奪銀仍寫歷史最佳.html">劍擊世錦賽｜男花港隊主場一劍不敵「世一」意大利 奪銀仍寫歷史最佳</a></h2>
-  <div class="summary">香港男子花劍隊於世界錦標賽主場出擊，決賽一劍之差不敵世界排名第一的意大利，但仍奪得銀牌，創下歷史最佳成績。</div>
-  <span class="tag">劍擊</span><span class="tag">世錦賽</span><span class="tag">香港</span><span class="tag">男子花劍</span>
-</div><div class="card">
-  <div class="meta">📅 2026年08月21日 · Google News</div>
-  <h2><a href="news/15-港隊劍擊隊服-hk港花-成歷史-劍擊總會-本月起本地賽改用區旗.html">港隊劍擊隊服「HK港花」成歷史 劍擊總會：本月起本地賽改用區旗</a></h2>
-  <div class="summary">香港劍擊總會宣布，本月起本地賽事全面改用區旗，取代沿用多年的「HK港花」隊服設計。港隊女花代表表示有情意結，但強調身份認同不局限於形式。</div>
-  <span class="tag">香港劍擊</span><span class="tag">隊服</span><span class="tag">區旗</span><span class="tag">劍擊總會</span>
-</div><div class="card">
-  <div class="meta">📅 2026年08月21日 · Google News</div>
-  <h2><a href="news/16-劍擊隊-港花-圖案絕跡-只能用區旗.html">劍擊隊「港花」圖案絕跡 只能用區旗</a></h2>
-  <div class="summary">香港劍擊隊的「港花」圖案已不再使用，現時只能使用區旗。</div>
-  <span class="tag">劍擊</span><span class="tag">香港</span><span class="tag">區旗</span>
-</div><div class="card">
-  <div class="meta">📅 2026年08月20日 · FIE 國際劍聯</div>
-  <h2><a href="news/17-國際劍聯在香港凝聚各國劍擊總會-推動安全運動.html">國際劍聯在香港凝聚各國劍擊總會 推動安全運動</a></h2>
-  <div class="summary">國際劍聯（FIE）於香港舉辦活動，呼籲各國劍擊總會共同推廣安全運動，強調運動員福祉。</div>
-  <span class="tag">國際劍聯</span><span class="tag">安全運動</span><span class="tag">香港</span><span class="tag">劍擊</span>
-</div><div class="card">
-  <div class="meta">📅 2026年08月20日 · FIE 國際劍聯</div>
-  <h2><a href="news/18-國際劍聯首辦運動醫學會議-選址香港.html">國際劍聯首辦運動醫學會議 選址香港</a></h2>
-  <div class="summary">國際劍聯（FIE）宣布將於香港舉辦首屆運動醫學會議，標誌著劍擊運動科學發展的新里程。</div>
-  <span class="tag">國際劍聯</span><span class="tag">運動醫學</span><span class="tag">香港</span><span class="tag">劍擊</span>
-</div><div class="card">
-  <div class="meta">📅 2026年08月20日 · FIE 國際劍聯</div>
-  <h2><a href="news/19-歷史劍擊亮相世錦賽-傳統與現代交織.html">歷史劍擊亮相世錦賽，傳統與現代交織</a></h2>
-  <div class="summary">世界劍擊錦標賽上，歷史劍擊項目成為焦點，展現劍擊運動的深厚底蘊。</div>
-  <span class="tag">劍擊</span><span class="tag">世錦賽</span><span class="tag">歷史劍擊</span><span class="tag">傳統</span>
-</div><div class="card">
-  <div class="meta">📅 2026年08月18日 · Google News</div>
-  <h2><a href="news/20-劍擊世錦賽-香港男子花劍隊一劍不敵意大利-團體銀牌仍創最佳.html">劍擊世錦賽｜香港男子花劍隊一劍不敵意大利 團體銀牌仍創最佳</a></h2>
-  <div class="summary">香港男子花劍隊於世錦賽團體決賽一劍之差負於意大利，但仍奪得銀牌，創下歷史最佳成績。</div>
-  <span class="tag">劍擊</span><span class="tag">世錦賽</span><span class="tag">香港</span><span class="tag">花劍</span>
-</div><div class="card">
-  <div class="meta">📅 2026年08月16日 · Google News</div>
-  <h2><a href="news/21-劍擊世錦賽-港男花僅負意大利仍創歷史佳績-張家朗感謝港人支持.html">劍擊世錦賽｜港男花僅負意大利仍創歷史佳績 張家朗感謝港人支持</a></h2>
-  <div class="summary">香港男子花劍隊於世錦賽僅負意大利，仍創下歷史最佳成績，張家朗感謝港人支持。</div>
-  <span class="tag">劍擊</span><span class="tag">世錦賽</span><span class="tag">香港</span><span class="tag">張家朗</span>
-</div><div class="card">
-  <div class="meta">📅 2026年08月15日 · Google News</div>
-  <h2><a href="news/22-劍擊世錦賽-香港9年後再辦劍擊大賽-港隊主場出擊聲勢今非昔比.html">劍擊世錦賽｜香港9年後再辦劍擊大賽 港隊主場出擊聲勢今非昔比</a></h2>
-  <div class="summary">香港將於9年後再次舉辦劍擊世錦賽，港隊主場出擊，聲勢今非昔比。</div>
-  <span class="tag">劍擊</span><span class="tag">世錦賽</span><span class="tag">香港</span><span class="tag">港隊</span>
-</div><div class="card">
-  <div class="meta">📅 2026年08月14日 · Google News</div>
-  <h2><a href="news/23-中銀青少年發展計劃-親子劍擊工作坊-增家庭凝聚力.html">「中銀青少年發展計劃」親子劍擊工作坊 增家庭凝聚力</a></h2>
-  <div class="summary">「中銀青少年發展計劃」舉辦親子劍擊工作坊，旨在透過劍擊活動加強家庭成員之間的互動與凝聚力。</div>
-  <span class="tag">中銀青少年發展計劃</span><span class="tag">親子劍擊</span><span class="tag">家庭凝聚力</span><span class="tag">劍擊運動</span>
-</div><div class="card">
-  <div class="meta">📅 2026年08月13日 · Google News</div>
-  <h2><a href="news/24-中銀青少年發展計劃-親子劍擊工作坊增家庭凝聚力.html">「中銀青少年發展計劃」親子劍擊工作坊增家庭凝聚力</a></h2>
-  <div class="summary">「中銀青少年發展計劃」舉辦親子劍擊工作坊，旨在透過劍擊活動加強家庭凝聚力。</div>
-  <span class="tag">中銀青少年發展計劃</span><span class="tag">親子劍擊</span><span class="tag">家庭凝聚力</span><span class="tag">劍擊工作坊</span>
-</div><div class="card">
-  <div class="meta">📅 2026年08月13日 · Google News</div>
-  <h2><a href="news/25-tvb獨家直播-劍擊世錦賽2026-張家朗蔡俊彥佘繕妡爭金-星級主持評述陣容曝光.html">TVB獨家直播《劍擊世錦賽2026》 張家朗蔡俊彥佘繕妡爭金 星級主持評述陣容曝光</a></h2>
-  <div class="summary">TVB將獨家播放《劍擊世錦賽2026》，見證張家朗、蔡俊彥及佘繕妡等香港劍手爭金，並公布星級主持及專業評述陣容。</div>
-  <span class="tag">劍擊世錦賽</span><span class="tag">TVB</span><span class="tag">張家朗</span><span class="tag">蔡俊彥</span>
-</div><div class="card">
-  <div class="meta">📅 2026年08月12日 · Google News</div>
-  <h2><a href="news/26-名古屋亞運2026劍擊-香港隊名單出爐-張家朗四戰亞運爭衛冕.html">名古屋亞運2026劍擊｜香港隊名單出爐 張家朗四戰亞運爭衛冕</a></h2>
-  <div class="summary">香港劍擊隊公布名古屋亞運名單，張家朗將第四次出戰亞運，力爭衛冕。</div>
-  <span class="tag">名古屋亞運</span><span class="tag">香港劍擊</span><span class="tag">張家朗</span><span class="tag">亞運名單</span>
-</div><div class="card">
-  <div class="meta">📅 2026年08月12日 · Google News</div>
-  <h2><a href="news/27-劍擊世錦賽港隊男子花劍團體奪銀-僅負意大利1分.html">劍擊世錦賽港隊男子花劍團體奪銀 僅負意大利1分</a></h2>
-  <div class="summary">港隊男子花劍團體於世錦賽決賽以1分之差不敵意大利，奪得銀牌。</div>
-  <span class="tag">劍擊</span><span class="tag">世錦賽</span><span class="tag">港隊</span><span class="tag">男子花劍</span>
-</div><div class="card">
-  <div class="meta">📅 2026年08月12日 · Google News</div>
-  <h2><a href="news/28-世界劍擊錦標賽2026中國香港啟動禮天際萬豪舉行.html">世界劍擊錦標賽2026中國香港啟動禮天際萬豪舉行</a></h2>
-  <div class="summary">世界劍擊錦標賽2026中國香港啟動禮於天際萬豪舉行，標誌著賽事籌備工作正式展開。</div>
-  <span class="tag">世界劍擊錦標賽</span><span class="tag">香港</span><span class="tag">啟動禮</span><span class="tag">劍擊</span>
-</div><div class="card">
-  <div class="meta">📅 2026年08月12日 · Google News</div>
-  <h2><a href="news/29-劍擊世錦賽-張家朗16強止步認優勝劣敗-成績平淡卻因拾回初心感快樂.html">劍擊世錦賽｜張家朗16強止步認優勝劣敗 成績平淡卻因拾回初心感快樂</a></h2>
-  <div class="summary">張家朗於劍擊世錦賽16強止步，坦言優勝劣敗，但成績平淡下卻因拾回初心而感到快樂。</div>
-  <span class="tag">劍擊</span><span class="tag">世錦賽</span><span class="tag">張家朗</span><span class="tag">香港</span>
-</div><div class="card">
-  <div class="meta">📅 2026年08月11日 · Google News</div>
-  <h2><a href="news/30-劍擊世錦賽7月底亞博上演-一文睇清賽程-賽制-門票資訊-港隊名單.html">劍擊世錦賽7月底亞博上演 一文睇清賽程／賽制／門票資訊／港隊名單</a></h2>
-  <div class="summary">劍擊世錦賽將於7月底在亞洲國際博覽館舉行，本文整理賽程、賽制、門票資訊及港隊名單。</div>
-  <span class="tag">劍擊</span><span class="tag">世錦賽</span><span class="tag">亞博</span><span class="tag">港隊</span>
-</div><div class="card">
-  <div class="meta">📅 2026年08月11日 · Google News</div>
-  <h2><a href="news/31-世界劍擊錦標賽2026觀賽手冊-賽程焦點全面睇.html">世界劍擊錦標賽2026觀賽手冊 賽程焦點全面睇</a></h2>
-  <div class="summary">世界劍擊錦標賽2026即將舉行，本文提供賽程、焦點賽事及購票資訊，劍擊迷不容錯過。</div>
-  <span class="tag">世界劍擊錦標賽</span><span class="tag">2026</span><span class="tag">觀賽手冊</span><span class="tag">賽程</span>
-</div><div class="card">
-  <div class="meta">📅 2026年08月10日 · Google News</div>
-  <h2><a href="news/32-劍擊世錦賽-香港男子花劍首入團體決賽創歷史-今晚7點爭世界冠軍.html">劍擊世錦賽｜香港男子花劍首入團體決賽創歷史 今晚7點爭世界冠軍</a></h2>
-  <div class="summary">香港男子花劍隊歷史性首次打入世錦賽團體決賽，今晚7點將爭奪世界冠軍。</div>
-  <span class="tag">劍擊</span><span class="tag">世錦賽</span><span class="tag">香港</span><span class="tag">男子花劍</span>
-</div><div class="card">
-  <div class="meta">📅 2026年08月10日 · Google News</div>
-  <h2><a href="news/33-劍擊世錦賽-男花港隊闖決賽創歷史-今晚7時主場爭金.html">劍擊世錦賽｜男花港隊闖決賽創歷史 今晚7時主場爭金</a></h2>
-  <div class="summary">香港男子花劍隊歷史性殺入世界錦標賽決賽，今晚7時將於主場爭奪金牌。</div>
-  <span class="tag">劍擊</span><span class="tag">世錦賽</span><span class="tag">香港</span><span class="tag">男子花劍</span>
-</div><div class="card">
-  <div class="meta">📅 2026年08月10日 · Google News</div>
-  <h2><a href="news/34-世錦賽男子團體花劍港隊首奪銀牌.html">世錦賽男子團體花劍港隊首奪銀牌</a></h2>
-  <div class="summary">香港男子花劍隊在世界錦標賽團體賽中歷史性奪得銀牌，創下最佳成績。</div>
-  <span class="tag">香港劍擊</span><span class="tag">世錦賽</span><span class="tag">男子花劍</span><span class="tag">銀牌</span>
-</div><div class="card">
-  <div class="meta">📅 2026年08月07日 · Google News</div>
-  <h2><a href="news/35-名古屋亞運2026劍擊-香港代表名單及賽程一覽.html">名古屋亞運2026劍擊｜香港代表名單及賽程一覽</a></h2>
-  <div class="summary">名古屋亞運2026劍擊項目，香港隊參賽名單及賽程已公布，劍擊迷不容錯過。</div>
-  <span class="tag">名古屋亞運</span><span class="tag">劍擊</span><span class="tag">香港隊</span><span class="tag">賽程</span>
-</div><div class="card">
-  <div class="meta">📅 2026年08月07日 · Google News</div>
-  <h2><a href="news/36-劍擊世錦賽2026-世界劍擊錦標賽7-22亞博開鑼-每日賽程-焦點賽事-持續更新.html">劍擊世錦賽2026｜世界劍擊錦標賽7.22亞博開鑼 每日賽程/焦點賽事（持續更新）</a></h2>
-  <div class="summary">世界劍擊錦標賽將於7月22日在亞洲國際博覽館開鑼，賽事持續更新，提供每日賽程及焦點賽事資訊。</div>
-  <span class="tag">劍擊</span><span class="tag">世錦賽</span><span class="tag">香港</span><span class="tag">亞博</span>
-</div><div class="card">
-  <div class="meta">📅 2026年08月07日 · Google News</div>
-  <h2><a href="news/37-世界劍擊錦標賽2026首登香港-王嘉爾周六亞博現身打氣.html">世界劍擊錦標賽2026首登香港 王嘉爾周六亞博現身打氣</a></h2>
-  <div class="summary">世界劍擊錦標賽2026首次在香港舉行，周六（25日）亞博館將有藝人王嘉爾現身支持，周大福亦贈送幸運手繩為港隊打氣。</div>
-  <span class="tag">世界劍擊錦標賽</span><span class="tag">香港</span><span class="tag">王嘉爾</span><span class="tag">周大福</span>
-</div><div class="card">
-  <div class="meta">📅 2026年08月07日 · Google News</div>
-  <h2><a href="news/38-世界劍擊錦標賽-港隊男花強勢闖8強-蔡俊彥張家朗領銜挫比利時.html">世界劍擊錦標賽｜港隊男花強勢闖8強 蔡俊彥張家朗領銜挫比利時</a></h2>
-  <div class="summary">港隊男子花劍隊於世界劍擊錦標賽中表現強勢，在蔡俊彥和張家朗的帶領下擊敗比利時，成功晉級8強。</div>
-  <span class="tag">世界劍擊錦標賽</span><span class="tag">港隊</span><span class="tag">男子花劍</span><span class="tag">蔡俊彥</span>
-</div><div class="card">
-  <div class="meta">📅 2026年08月07日 · Google News</div>
-  <h2><a href="news/39-劍擊世錦賽-劍迷冒風雨到場支持-但求港將搏盡無悔.html">劍擊世錦賽｜劍迷冒風雨到場支持 但求港將搏盡無悔</a></h2>
-  <div class="summary">劍擊世錦賽期間，香港劍迷冒著風雨到場支持，只盼港將全力以赴，無悔比賽。</div>
-  <span class="tag">劍擊</span><span class="tag">世錦賽</span><span class="tag">香港</span><span class="tag">劍迷</span>
-</div><div class="card">
-  <div class="meta">📅 2026年08月07日 · Google News</div>
-  <h2><a href="news/40-劍擊世錦賽爆冷-男重女佩冠軍世界排名30以外.html">劍擊世錦賽爆冷 男重女佩冠軍世界排名30以外</a></h2>
-  <div class="summary">世界劍擊錦標賽男重及女佩項目爆出冷門，兩位新科世界冠軍均非種子選手，世界排名在30名以外。</div>
-  <span class="tag">劍擊</span><span class="tag">世錦賽</span><span class="tag">男重</span><span class="tag">女佩</span>
-</div><div class="card">
-  <div class="meta">📅 2026年08月07日 · Google News</div>
-  <h2><a href="news/41-劍擊世錦賽-港隊名單出爐-男花強陣主場出鞘-何承謙迎地標戰.html">劍擊世錦賽｜港隊名單出爐 男花強陣主場出鞘 何承謙迎地標戰</a></h2>
-  <div class="summary">港隊公布劍擊世錦賽名單，男子花劍強陣主場出戰，何承謙將迎來地標戰。</div>
-  <span class="tag">劍擊</span><span class="tag">世錦賽</span><span class="tag">港隊</span><span class="tag">何承謙</span>
-</div>
-</main>
-<footer>
-  <div>© 2026 Fencing Diary 劍擊日記 · <a href="https://www.facebook.com/fencingdiary.hk" target="_blank" rel="noopener">Facebook 專頁</a> · <a href="mailto:info@fencingdiary.com">info@fencingdiary.com</a></div>
-  <div class="disclaimer">本站內容由 AI 自動整理及人工整理，僅供參考。資料來源均附原文連結。</div>
+<div class="wrap"><h1 style="font-size:26px">最新消息</h1><h2 class="section">2026年10月</h2><div class="grid"><div class="card"><div class="date">📅 2026年10月04日</div><h3><a href="news/98-大埔劍擊第四季個人重劍及佩劍分齡賽10月19日大埔.html">大埔劍擊第四季個人重劍及佩劍分齡賽10月19日大埔墟體育館舉行 10月9日截止報名</a></h3><p>「2026年大埔劍擊第四季個人重劍及佩劍分齡賽」將於10月19日（星期一）假大埔墟體育館（大埔鄉事會街8號大埔綜合大樓6樓）舉行，截止報名日期為10月9日（額滿即止）。 賽事設多個分齡組別，包括U12男女混合重劍（201</p></div><div class="card"><div class="date">📅 2026年10月04日</div><h3><a href="news/97-東區體育會2026分齡劍擊積分賽第三站10月11日柴灣體育.html">東區體育會2026分齡劍擊積分賽第三站10月11日柴灣體育館舉行 現正接受報名</a></h3><p>東區體育會主辦的「2026分齡劍擊積分賽」第三站，將於10月11日（星期日）假柴灣體育館3樓（香港柴灣怡順街6號）舉行，現正接受報名。 賽事全年共設四站：第一站（4月19日）及第二站（7月12日）已完成，第三站為10月1</p></div><div class="card"><div class="date">📅 2026年10月04日</div><h3><a href="news/96-中銀香港青少年公開劍擊錦標賽一連兩日亞博舉行.html">中銀香港青少年公開劍擊錦標賽一連兩日亞博舉行 近千名青少年劍手參賽</a></h3><p>由中國香港劍擊總會主辦、中國銀行（香港）資助的「中銀香港青少年公開劍擊錦標賽」（BOCHK Junior Open Fencing Championships），10月3日至4日一連兩日假亞洲國際博覽館10號展館舉行。 </p></div></div><h2 class="section">2026年09月</h2><div class="grid"><div class="card"><div class="date">📅 2026年09月29日</div><h3><a href="news/94-名古屋亞運-劍擊港隊2銀4銅收官-男重團體連續兩.html">名古屋亞運｜劍擊港隊2銀4銅收官 男重團體連續兩屆摘銅</a></h3><p>愛知名古屋亞運劍擊項目周日（9月27日）在愛知國際展示場煞科，香港劍擊隊在最後一日憑男子重劍團體賽再添一面銅牌，今屆賽事共奪2銀4銅。 男子重劍團體賽由個人賽銅牌得主方凱申，夥拍吳浩天、何瑋桁及劉昊峯出戰。港隊16強先以</p></div><div class="card"><div class="date">📅 2026年09月29日</div><h3><a href="news/93-名古屋亞運-男花團體決賽3645負日本摘銀-何承謙.html">名古屋亞運｜男花團體決賽36:45負日本摘銀 何承謙「守尾門」追平隊史最佳</a></h3><p>愛知名古屋亞運劍擊項目周五（9月25日，中秋節正日）展開團體賽，由蔡俊彥、張家朗、何承謙及梁千雨組成的男子花劍港隊，先後擊敗印度及烏茲別克晉級，其後在準決賽以45:41險勝韓國，相隔一屆再闖決賽。 決賽面對東道主日本，港</p></div><div class="card"><div class="date">📅 2026年09月25日</div><h3><a href="news/91-名古屋亞運-劍擊團體賽開鑼-男花港隊今早登場爭.html">名古屋亞運｜劍擊團體賽開鑼 男花港隊今早登場爭獎牌</a></h3><p>名古屋亞運劍擊項目周五（9月25日）起轉戰團體賽。男子花劍個人賽銀牌得主蔡俊彥，將夥拍張家朗、何承謙及梁千雨出戰男子花劍團體賽，為港隊爭取獎牌。 男子花劍隊今早（日本時間8時半）在16強出戰印度。至於女子重劍隊（佘繕妡、</p></div><div class="card"><div class="date">📅 2026年09月25日</div><h3><a href="news/90-名古屋亞運-方凱申男子重劍個人賽奪銅-四戰亞運.html">名古屋亞運｜方凱申男子重劍個人賽奪銅 四戰亞運首登個人頒獎台</a></h3><p>名古屋亞運劍擊項目周四（9月24日）上演男子重劍及女子佩劍個人賽。港隊重劍代表方凱申在男子重劍個人賽8強以13:12反勝韓國劍手張孝敏，首次晉身亞運四強；由於賽事不設銅牌賽，他已鎖定一面獎牌。其後他在四強以13:15不敵</p></div><div class="card"><div class="date">📅 2026年09月24日</div><h3><a href="news/88-名古屋亞運-男佩陳樂熹八強-何柏霖16強同敗吳尚.html">名古屋亞運｜男佩陳樂熹八強、何柏霖16強同敗吳尚旭 女佩薛雅齊梁洛文止步</a></h3><p>名古屋亞運男子佩劍個人賽周三（9月23日）舉行，港隊兩名劍手陳樂熹及何柏霖先後喺韓國名將吳尚旭劍下止步，無緣頒獎台。 陳樂熹喺小組賽5戰全勝，一路殺入8強，惟8強遇上巴黎奧運金牌得主吳尚旭，最終以6:15落敗，無緣四強。</p></div><div class="card"><div class="date">📅 2026年09月24日</div><h3><a href="news/87-名古屋亞運-方凱申男子重劍個人賽首闖四強-鎖定.html">名古屋亞運｜方凱申男子重劍個人賽首闖四強 鎖定生涯首面亞運個人獎牌</a></h3><p>名古屋亞運劍擊項目周四（9月24日）上演男子重劍及女子佩劍個人賽。港隊重劍代表方凱申喺男子重劍個人賽8強，以13:12擊敗韓國劍手張孝敏，首次晉身亞運四強，由於賽事不設銅牌賽，佢已肯定為港隊鎖定一面獎牌，亦是佢四度出戰亞</p></div><div class="card"><div class="date">📅 2026年09月23日</div><h3><a href="news/85-名古屋亞運-張家朗男花32強止步無緣衛冕-女重佘.html">名古屋亞運｜張家朗男花32強止步無緣衛冕 女重佘繕妡陳渭泠16強出局</a></h3><p>名古屋亞運男子花劍個人賽周二（9月22日）舉行，爭取衛冕嘅港隊「劍神」張家朗喺32強以13:15不敵烏茲別克劍手Daniil Kravtsov，被淘汰出局，衛冕之路告終，呢個亦係佢三次出戰亞運男子花劍個人賽以嚟最差成績。</p></div><div class="card"><div class="date">📅 2026年09月23日</div><h3><a href="news/84-名古屋亞運-蔡俊彥男花個人賽摘銀-決賽1315僅負東.html">名古屋亞運｜蔡俊彥男花個人賽摘銀 決賽13:15僅負東道主飯村一輝</a></h3><p>名古屋亞運劍擊項目周二（9月22日）喺愛知縣國際展示場上演男子花劍個人賽。港隊代表蔡俊彥一路殺入決賽，最終以13:15不敵東道主日本劍手飯村一輝，奪得銀牌，突破上屆杭州亞運銅牌嘅成績，創下個人亞運最佳戰績。 決賽戰情相當</p></div><div class="card"><div class="date">📅 2026年09月22日</div><h3><a href="news/82-名古屋亞運-劍擊開鑼-蔡俊彥男花小組5戰全勝-張.html">名古屋亞運｜劍擊開鑼 蔡俊彥男花小組5戰全勝 張家朗2勝3負驚險晉32強</a></h3><p>名古屋亞運劍擊賽事周二（9月22日）開鑼，首日喺愛知縣國際展示場上演男子花劍同女子重劍個人賽。港隊男子花劍雙星蔡俊彥、張家朗分途出戰小組循環賽，結果雙雙取得32強淘汰賽席位。 小組循環賽每名劍手要打5場，每場先取得5分者</p></div><div class="card"><div class="date">📅 2026年09月04日</div><h3><a href="news/80-名古屋亞運-劍擊港隊24人體院會見傳媒-張家朗平.html">名古屋亞運｜劍擊港隊24人體院會見傳媒 張家朗平常心衛冕 蔡俊彥冀與隊友會師男花決賽</a></h3><p>第20屆愛知名古屋亞運會將於9月19日揭幕，被視為香港代表團獎牌大戶嘅劍擊隊昨日（9月3日）喺香港體育學院會見傳媒。港隊今屆派出24位運動員出戰花劍、佩劍及重劍項目，總教練鄭兆康期望今屆獎牌數目不少於上屆杭州亞運嘅1金1</p></div><div class="card"><div class="date">📅 2026年09月02日</div><h3><a href="news/78-挑戰盃劍擊錦標賽-17歲何承謙首奪本地成年組冠軍.html">挑戰盃劍擊錦標賽｜17歲何承謙首奪本地成年組冠軍 劍指亞運男花團體金牌</a></h3><p>一連兩日嘅挑戰盃劍擊錦標賽周日（8月30日）於香港公園體育館續演，17歲男子花劍新星、應屆世少冠軍何承謙於決賽以15:5擊敗2022年世少冠軍鄭鐵男，首度奪得本地成年組賽事冠軍，為9月名古屋亞運熱身。 上月於世界劍擊錦標</p></div><div class="card"><div class="date">📅 2026年09月02日</div><h3><a href="news/77-名古屋亞運-港劍隊-夫添-出席授旗典禮-張家朗.html">名古屋亞運｜港劍隊「夫添」出席授旗典禮 張家朗盼挾世錦賽之勇衝擊男花團體金牌</a></h3><p>第20屆愛知名古屋亞運會將於9月19日揭幕，中國香港代表團昨日（9月1日）舉行授旗典禮，約580名運動員將出戰逾30個體育項目。香港劍擊隊「夫添」出席，「劍神」張家朗明言盼挾世錦賽之勇衝擊男子花劍團體金牌；女子重劍眾將則</p></div><div class="card"><div class="date">📅 2026年09月02日</div><h3><a href="news/76-比賽公佈-沙田節-全港校際團體劍擊邀請賽2026-現正.html">比賽公佈｜沙田節·全港校際團體劍擊邀請賽2026 現正接受報名</a></h3><p>由沙田體育會有限公司主辦嘅「沙田節·全港校際團體劍擊邀請賽2026」現正接受報名，賽事將於2026年10月25日（星期日）上午9時至下午6時喺車公廟體育館（沙田頭路10號）舉行。 賽事設中學組別（2008年至2014年出</p></div></div><h2 class="section">2026年05月</h2><div class="grid"><div class="card"><div class="date">📅 2026年05月10日</div><h3><a href="news/27-ryan-choi-aims-to-put-hong-kong-on-top-of-the-world-蔡俊彥目標帶港隊登世界第一.html">Ryan Choi aims to put Hong Kong on top of the world｜蔡俊彥目標帶港隊登世界第一</a></h3><p>南華早報專訪現任男花世界第一蔡俊彥，他表示目標是在退役前帶領香港男花團體登上世界第一，並在7月主場世錦賽中衛冕。
+蔡俊彥在專訪中分享了他的訓練哲學和比賽心態，強調團隊合作的重要性。他認為香港男花有潛力成為世界最佳，關鍵是</p></div><div class="card"><div class="date">📅 2026年05月10日</div><h3><a href="news/23-嘉里世界劍擊錦標賽2026-港隊男花-四劍客-劍指-2.html">嘉里世界劍擊錦標賽2026｜港隊男花「四劍客」劍指男團世一</a></h3><p>嘉里世界劍擊錦標賽2026新聞發布會舉行，港隊男花「四劍客」蔡俊彥、張家朗、林浩朗及梁千雨劍指男團世界第一，主場作賽備受期待。
+發布會上公布賽事詳情，香港劍擊總會表示已準備就緒迎接這項盛事。港隊教練團隊表示，四名劍手狀態</p></div><div class="card"><div class="date">📅 2026年05月10日</div><h3><a href="news/22-蔡俊彥劍指世界賽主場偕隊友奪牌-盼男花港隊登-2.html">蔡俊彥劍指世界賽主場偕隊友奪牌｜盼男花港隊登世一</a></h3><p>現任男花世界冠軍蔡俊彥表示，希望在7月主場世錦賽中偕隊友奪牌，並盼帶領香港男花團體登上世界第一。
+蔡俊彥在訪問中提到：「主場作賽有特別意義，我們希望能夠在主場觀眾面前爭取佳績。香港男花團體這幾年一直在進步，世界第一是我們</p></div><div class="card"><div class="date">📅 2026年05月09日</div><h3><a href="news/28-世青賽男花連奪兩金-林浩朗-何承謙凱旋回港.html">世青賽男花連奪兩金｜林浩朗、何承謙凱旋回港</a></h3><p>香港劍手林浩朗與何承謙在世界青年劍擊錦標賽男子花劍項目中連奪兩面金牌，並於5月9日凱旋回港。
+兩名小將在比賽中表現出色，林浩朗在個人賽金牌戰中以15:11取勝，何承謙則在團體賽中發揮關鍵作用。香港劍擊總會到機場迎接，祝賀</p></div><div class="card"><div class="date">📅 2026年05月04日</div><h3><a href="news/24-男花世界盃伊斯坦堡站-港隊奪銅-穩守世界第4-2.html">男花世界盃伊斯坦堡站｜港隊奪銅 穩守世界第4「亞洲第一」</a></h3><p>香港男子花劍隊在土耳其伊斯坦堡花劍世界盃奪得團體銅牌，世界排名穩守第4，繼續保持亞洲第一的地位，排在意大利、美國及法國之後。
+港隊在小組賽以全勝姿態出線，八強戰擊敗韓國隊，四強戰雖不敵意大利，但在銅牌戰中以45:38擊敗</p></div></div><h2 class="section">2026年04月</h2><div class="grid"><div class="card"><div class="date">📅 2026年04月21日</div><h3><a href="news/25-花劍世界盃開羅站-港隊男花奪銀-世界排名升至-2.html">花劍世界盃開羅站｜港隊男花奪銀 世界排名升至第4</a></h3><p>由蔡俊彥、張家朗、林浩朗和梁千雨組成的香港男子花劍隊，在花劍世界盃開羅站奪得團體賽銀牌，令港隊的世界排名由第5升至第4。
+港隊在決賽中以42:45僅負於意大利隊，但仍創下港隊在該站的最佳成績。蔡俊彥在個人賽亦打入八強，展</p></div></div><h2 class="section">2025年07月</h2><div class="grid"><div class="card"><div class="date">📅 2025年07月24日</div><h3><a href="news/26-蔡俊彥劍擊世錦賽奪冠-成香港首位男花世界冠軍-2.html">蔡俊彥劍擊世錦賽奪冠｜成香港首位男花世界冠軍締歷史</a></h3><p>蔡俊彥在劍擊世錦賽男子花劍項目中奪冠，以15:9擊敗對手，成為香港首位男子花劍世界冠軍，締造歷史。
+這場決賽蔡俊彥從開局就掌控節奏，以精準的進攻和穩健的防守壓制對手。賽後他表示：「這面金牌不只是我的，是整個香港劍擊團隊的</p></div></div></div>
+<footer class="site">
+  Fencing Diary 劍擊日記．一個屬於香港人的劍擊平台<br>
+  本網站為資訊整理平台，內容不構成教練指導或官方意見。<br>
+  <a href="https://www.facebook.com/fencingdiary.hk">Facebook</a>｜info@fencingdiary.com
 </footer>
-</body>
-</html>
+</body></html>

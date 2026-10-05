@@ -1,97 +1,52 @@
 <!DOCTYPE html>
-<html lang="zh-Hant">
-<head>
-<meta charset="UTF-8">
+<html lang="zh-Hant"><head><meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>首頁 | Fencing Diary 劍擊日記</title>
 <meta name="description" content="一個屬於香港人的劍擊平台">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🤺</text></svg>">
 <style>
-* { margin:0; padding:0; box-sizing:border-box; }
-body { background:#0b1220; color:#e8edf5; font-family:'Segoe UI','Noto Sans TC','Microsoft JhengHei',system-ui,sans-serif; line-height:1.7; }
-a { color:#e8b23a; text-decoration:none; }
-a:hover { text-decoration:underline; }
-header { background:#0e1626; border-bottom:1px solid #1e2a44; position:sticky; top:0; z-index:10; }
-.nav-inner { max-width:960px; margin:0 auto; padding:14px 20px; display:flex; align-items:center; justify-content:space-between; gap:16px; flex-wrap:wrap; }
-.brand { font-weight:800; font-size:1.15rem; color:#fff; }
-.brand span { color:#e8b23a; }
-nav { display:flex; gap:18px; flex-wrap:wrap; }
-nav a { color:#93a1b5; font-size:.95rem; }
-nav a.active { color:#e8b23a; font-weight:700; }
-main { max-width:960px; margin:0 auto; padding:28px 20px 60px; }
-.hero { padding:56px 0 40px; text-align:center; }
-.hero h1 { font-size:2.3rem; color:#fff; letter-spacing:1px; }
-.hero .tagline { color:#93a1b5; margin-top:10px; font-size:1.1rem; }
-.hero .badge { display:inline-block; margin-top:18px; padding:6px 16px; border:1px solid #e8b23a; color:#e8b23a; border-radius:999px; font-size:.85rem; }
-.card { background:#131c2e; border:1px solid #1e2a44; border-radius:12px; padding:18px 20px; margin-bottom:14px; }
-.card h2 { font-size:1.05rem; color:#fff; margin-bottom:6px; }
-.card h2 a { color:#fff; }
-.card h2 a:hover { color:#e8b23a; text-decoration:none; }
-.meta { color:#93a1b5; font-size:.82rem; margin-bottom:6px; }
-.summary { color:#e8edf5; font-size:.95rem; }
-.tag { display:inline-block; background:#1c2a4a; color:#e8b23a; border-radius:6px; padding:2px 8px; font-size:.75rem; margin:6px 4px 0 0; }
-h1.page-title { font-size:1.8rem; color:#fff; margin-bottom:24px; border-bottom:3px solid #e8b23a; padding-bottom:10px; }
-.article-body { font-size:1.02rem; }
-.article-body p { margin-bottom:14px; }
-.source { margin-top:20px; padding-top:14px; border-top:1px solid #1e2a44; color:#93a1b5; font-size:.85rem; }
-.back { display:inline-block; margin-bottom:20px; color:#93a1b5; font-size:.9rem; }
-footer { border-top:1px solid #1e2a44; background:#0e1626; padding:26px 20px; text-align:center; color:#93a1b5; font-size:.82rem; }
-footer a { color:#e8b23a; }
-.disclaimer { margin-top:8px; font-size:.75rem; color:#64748b; }
-@media (max-width:640px) {
-  .hero h1 { font-size:1.7rem; }
-  nav { gap:12px; }
-}
-</style>
-</head>
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:#0b1220;color:#e8edf5;font-family:'Segoe UI','Noto Sans TC','Microsoft JhengHei',system-ui,sans-serif;line-height:1.8}
+a{color:#e8b23a;text-decoration:none} a:hover{text-decoration:underline}
+.wrap{max-width:900px;margin:0 auto;padding:28px 20px 60px}
+header.site{border-bottom:1px solid #22314a;padding:18px 20px;background:#0f172a}
+header.site .inner{max-width:900px;margin:0 auto;display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap}
+header.site .brand{font-size:20px;font-weight:800;color:#e8edf5}
+header.site .brand span{color:#e8b23a}
+nav a{margin-left:16px;font-size:14px;color:#93a1b5}
+.hero{padding:34px 0 22px}
+.hero h1{font-size:29px;line-height:1.35;margin-bottom:10px}
+.hero p{color:#93a1b5;font-size:15px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:16px;margin-top:20px}
+.card{background:#131c2e;border:1px solid #22314a;border-radius:12px;padding:16px}
+.card .date{font-size:12px;color:#93a1b5;margin-bottom:6px}
+.card h3{font-size:15.5px;line-height:1.5;font-weight:700}
+.card p{color:#93a1b5;font-size:13px;margin-top:8px}
+h2.section{font-size:19px;margin:34px 0 6px;padding-left:10px;border-left:4px solid #e8b23a}
+article h1{font-size:25px;line-height:1.4;margin-bottom:10px}
+article .meta{color:#93a1b5;font-size:13px;margin-bottom:20px}
+article p{margin:12px 0}
+article img{max-width:100%;height:auto;border-radius:10px;margin:12px 0}
+article ul,article ol{margin:12px 0 12px 22px}
+blockquote{border-left:3px solid #e8b23a;padding:8px 14px;color:#93a1b5;margin:14px 0;background:#101a2b}
+footer.site{border-top:1px solid #22314a;color:#93a1b5;font-size:13px;text-align:center;padding:22px}
+.btn{display:inline-block;background:#e8b23a;color:#1a1408;font-weight:800;padding:10px 18px;border-radius:8px;margin-top:14px}
+</style></head>
 <body>
-<header><div class="nav-inner">
-  <div class="brand">🤺 Fencing&nbsp;Diary&nbsp;劍擊日記</div>
-  <nav><a href="index.html" class="active">首頁</a><a href="news.html">最新消息</a><a href="club-guide.html">劍會指南</a><a href="about.html">關於我們</a></nav>
+<header class="site"><div class="inner">
+  <div class="brand">🤺 Fencing <span>Diary</span></div>
+  <nav><a href="index.html">首頁</a><a href="news.html">最新消息</a><a href="club-guide.html">劍會指南</a><a href="about.html">關於</a></nav>
 </div></header>
-<main>
-
-<div class="hero">
-  <h1>🤺 Fencing Diary 劍擊日記</h1>
-  <div class="tagline">一個屬於香港人的劍擊平台</div>
-  <div class="badge">香港劍擊資訊平台 · 比賽消息 · 劍會指南</div>
+<div class="wrap">
+<div class="hero"><h1>一個屬於香港人的劍擊平台</h1>
+<p>每日自動彙整香港及國際劍擊新聞，緊貼港隊動態、賽事資訊與劍會指南。</p>
+<a class="btn" href="news.html">睇全部消息 →</a></div>
+<h2 class="section">最新消息</h2>
+<div class="grid"><div class="card"><div class="date">📅 2026年10月04日</div><h3><a href="news/98-大埔劍擊第四季個人重劍及佩劍分齡賽10月19日大埔.html">大埔劍擊第四季個人重劍及佩劍分齡賽10月19日大埔墟體育館舉行 10月9日截止報名</a></h3><p>「2026年大埔劍擊第四季個人重劍及佩劍分齡賽」將於10月19日（星期一）假大埔墟體育館（大埔鄉事會街8號大埔綜合大樓6樓）舉行，截止報名日期為10月9日（額滿即止）。 賽事設多個分齡組別，包括U12男女混合重劍（201</p></div><div class="card"><div class="date">📅 2026年10月04日</div><h3><a href="news/97-東區體育會2026分齡劍擊積分賽第三站10月11日柴灣體育.html">東區體育會2026分齡劍擊積分賽第三站10月11日柴灣體育館舉行 現正接受報名</a></h3><p>東區體育會主辦的「2026分齡劍擊積分賽」第三站，將於10月11日（星期日）假柴灣體育館3樓（香港柴灣怡順街6號）舉行，現正接受報名。 賽事全年共設四站：第一站（4月19日）及第二站（7月12日）已完成，第三站為10月1</p></div><div class="card"><div class="date">📅 2026年10月04日</div><h3><a href="news/96-中銀香港青少年公開劍擊錦標賽一連兩日亞博舉行.html">中銀香港青少年公開劍擊錦標賽一連兩日亞博舉行 近千名青少年劍手參賽</a></h3><p>由中國香港劍擊總會主辦、中國銀行（香港）資助的「中銀香港青少年公開劍擊錦標賽」（BOCHK Junior Open Fencing Championships），10月3日至4日一連兩日假亞洲國際博覽館10號展館舉行。 </p></div><div class="card"><div class="date">📅 2026年09月29日</div><h3><a href="news/94-名古屋亞運-劍擊港隊2銀4銅收官-男重團體連續兩.html">名古屋亞運｜劍擊港隊2銀4銅收官 男重團體連續兩屆摘銅</a></h3><p>愛知名古屋亞運劍擊項目周日（9月27日）在愛知國際展示場煞科，香港劍擊隊在最後一日憑男子重劍團體賽再添一面銅牌，今屆賽事共奪2銀4銅。 男子重劍團體賽由個人賽銅牌得主方凱申，夥拍吳浩天、何瑋桁及劉昊峯出戰。港隊16強先以</p></div><div class="card"><div class="date">📅 2026年09月29日</div><h3><a href="news/93-名古屋亞運-男花團體決賽3645負日本摘銀-何承謙.html">名古屋亞運｜男花團體決賽36:45負日本摘銀 何承謙「守尾門」追平隊史最佳</a></h3><p>愛知名古屋亞運劍擊項目周五（9月25日，中秋節正日）展開團體賽，由蔡俊彥、張家朗、何承謙及梁千雨組成的男子花劍港隊，先後擊敗印度及烏茲別克晉級，其後在準決賽以45:41險勝韓國，相隔一屆再闖決賽。 決賽面對東道主日本，港</p></div><div class="card"><div class="date">📅 2026年09月25日</div><h3><a href="news/91-名古屋亞運-劍擊團體賽開鑼-男花港隊今早登場爭.html">名古屋亞運｜劍擊團體賽開鑼 男花港隊今早登場爭獎牌</a></h3><p>名古屋亞運劍擊項目周五（9月25日）起轉戰團體賽。男子花劍個人賽銀牌得主蔡俊彥，將夥拍張家朗、何承謙及梁千雨出戰男子花劍團體賽，為港隊爭取獎牌。 男子花劍隊今早（日本時間8時半）在16強出戰印度。至於女子重劍隊（佘繕妡、</p></div><div class="card"><div class="date">📅 2026年09月25日</div><h3><a href="news/90-名古屋亞運-方凱申男子重劍個人賽奪銅-四戰亞運.html">名古屋亞運｜方凱申男子重劍個人賽奪銅 四戰亞運首登個人頒獎台</a></h3><p>名古屋亞運劍擊項目周四（9月24日）上演男子重劍及女子佩劍個人賽。港隊重劍代表方凱申在男子重劍個人賽8強以13:12反勝韓國劍手張孝敏，首次晉身亞運四強；由於賽事不設銅牌賽，他已鎖定一面獎牌。其後他在四強以13:15不敵</p></div><div class="card"><div class="date">📅 2026年09月24日</div><h3><a href="news/88-名古屋亞運-男佩陳樂熹八強-何柏霖16強同敗吳尚.html">名古屋亞運｜男佩陳樂熹八強、何柏霖16強同敗吳尚旭 女佩薛雅齊梁洛文止步</a></h3><p>名古屋亞運男子佩劍個人賽周三（9月23日）舉行，港隊兩名劍手陳樂熹及何柏霖先後喺韓國名將吳尚旭劍下止步，無緣頒獎台。 陳樂熹喺小組賽5戰全勝，一路殺入8強，惟8強遇上巴黎奧運金牌得主吳尚旭，最終以6:15落敗，無緣四強。</p></div></div>
 </div>
-<div style="background:#131c2e;border:1px solid #1e2a44;border-radius:12px;padding:22px;margin-bottom:28px">
-  <h2 style="color:#fff;margin-bottom:8px">關於 Fencing Diary</h2>
-  <p style="color:#e8edf5">我哋係一個屬於香港人的劍擊平台，每日自動彙整本地及國際劍擊新聞，亦提供全港劍會指南，幫你搵到最啱自己嘅劍擊起點。無論你想緊貼港隊動態、搵劍會學劍，定係追蹤比賽戰報，呢度都係你嘅一站式劍擊資訊站。</p>
-  <p style="margin-top:12px"><a href="club-guide.html">→ 睇劍會指南</a> &nbsp; <a href="news.html">→ 睇全部消息</a></p>
-</div>
-<h1 class="page-title">最新消息</h1>
-<div class="card">
-  <div class="meta">📅 2026年09月09日 · Google News</div>
-  <h2><a href="news/01-香港劍擊運動員示範訓練-積極備戰亞運會.html">香港劍擊運動員示範訓練 積極備戰亞運會</a></h2>
-  <div class="summary">香港劍擊運動員近日進行示範訓練，為即將到來的亞運會積極備戰。</div>
-</div><div class="card">
-  <div class="meta">📅 2026年09月04日 · Google News</div>
-  <h2><a href="news/02-香港劍擊隊出征亞運-力爭佳績.html">香港劍擊隊出征亞運 力爭佳績</a></h2>
-  <div class="summary">香港劍擊隊即將出征亞運會，目標係爭取頂峰成績。</div>
-</div><div class="card">
-  <div class="meta">📅 2026年09月04日 · Google News</div>
-  <h2><a href="news/03-香港劍擊運動員積極備戰亞運會.html">香港劍擊運動員積極備戰亞運會</a></h2>
-  <div class="summary">香港劍擊運動員正密鑼緊鼓備戰亞運會，力爭佳績。</div>
-</div><div class="card">
-  <div class="meta">📅 2026年09月04日 · Google News</div>
-  <h2><a href="news/04-ai劍擊教練登場-提升出劍精準度.html">AI劍擊教練登場 提升出劍精準度</a></h2>
-  <div class="summary">人工智能技術應用於劍擊訓練，有望協助運動員提升出劍精準度。</div>
-</div><div class="card">
-  <div class="meta">📅 2026年09月04日 · Google News</div>
-  <h2><a href="news/05-名古屋亞運-蔡俊彥盼與張家朗會師男花決賽-總教練望雙位數獎牌.html">名古屋亞運｜蔡俊彥盼與張家朗會師男花決賽 總教練望雙位數獎牌</a></h2>
-  <div class="summary">港隊劍擊代表蔡俊彥期望在名古屋亞運與張家朗會師男子花劍決賽，總教練則以雙位數獎牌為目標，強調每個劍種都有機會奪牌。</div>
-</div><div class="card">
-  <div class="meta">📅 2026年09月04日 · Google News</div>
-  <h2><a href="news/06-劍擊港隊亞運目標雙位數獎牌-蔡俊彥康復中冀衝雙金.html">劍擊港隊亞運目標雙位數獎牌 蔡俊彥康復中冀衝雙金</a></h2>
-  <div class="summary">劍擊港隊力爭亞運雙位數獎牌，蔡俊彥正加緊康復，期望衝擊雙金，並期待在個人賽決賽與張家朗交手。</div>
-</div>
-<p style="margin-top:16px"><a href="news.html">查看全部 →</a></p>
-</main>
-<footer>
-  <div>© 2026 Fencing Diary 劍擊日記 · <a href="https://www.facebook.com/fencingdiary.hk" target="_blank" rel="noopener">Facebook 專頁</a> · <a href="mailto:info@fencingdiary.com">info@fencingdiary.com</a></div>
-  <div class="disclaimer">本站內容由 AI 自動整理及人工整理，僅供參考。資料來源均附原文連結。</div>
+<footer class="site">
+  Fencing Diary 劍擊日記．一個屬於香港人的劍擊平台<br>
+  本網站為資訊整理平台，內容不構成教練指導或官方意見。<br>
+  <a href="https://www.facebook.com/fencingdiary.hk">Facebook</a>｜info@fencingdiary.com
 </footer>
-</body>
-</html>
+</body></html>
