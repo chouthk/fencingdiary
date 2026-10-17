@@ -80,6 +80,29 @@ footer a { color:#e8b23a; }
   <p style="margin-top:12px">想開始學劍？即刻跟隨我哋嘅 Facebook 專頁，緊貼劍壇動態同劍會資訊！</p>
   <p style="margin-top:12px"><a href="https://www.facebook.com/fencingdiary.hk" target="_blank" rel="noopener">→ 追蹤 Fencing Diary Facebook 專頁</a></p>
 </div>
+<div class="card" id="clubs-directory">
+  <h2>全港劍會名錄（44 間）</h2>
+  <p style="margin-top:8px">已收錄中國香港劍擊總會（HKFA）<b>44 間屬會會員</b>，可按會名搜尋、直接開啟官方網站。</p>
+  <div id="clubPreview" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:10px;margin-top:14px"></div>
+  <p style="margin-top:14px"><a href="/clubs.html" style="font-weight:800">→ 查看完整劍會名錄（44 間）</a></p>
+</div>
+<script>
+(function(){
+  function esc(s){return String(s||'').replace(/[&<>"']/g,function(m){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m];});}
+  fetch('/data/clubs.json').then(function(r){return r.json();}).then(function(d){
+    var box=document.getElementById('clubPreview');
+    var list=(d.clubs||[]).filter(function(c){return c.website;}).slice(0,6);
+    box.innerHTML=list.map(function(c){
+      return '<div style="background:#131c2e;border:1px solid #22314a;border-radius:10px;padding:12px">'
+        +'<div style="font-size:14.5px;font-weight:700;color:#fff">'+esc(c.name_zh||c.name_en)+'</div>'
+        +(c.name_en&&c.name_en!==c.name_zh?'<div style="font-size:12px;color:#93a1b5;margin-top:2px">'+esc(c.name_en)+'</div>':'')
+        +'<a href="'+esc(c.website)+'" target="_blank" rel="noopener nofollow" style="font-size:13px;display:inline-block;margin-top:8px">網站 →</a></div>';
+    }).join('');
+    var h=document.querySelector('#clubs-directory h2');
+    if(h&&d.count){h.textContent='全港劍會名錄（'+d.count+' 間）';}
+  }).catch(function(){});
+})();
+</script>
 <div class="card">
   <h2>點樣揀劍會？</h2>
   <p style="margin-top:8px"><b>1. 睇劍種：</b>花劍（Foil）最普及，適合初學者；重劍（Epee）節奏沉穩；佩劍（Sabre）速度最快，適合好動嘅你。</p>
