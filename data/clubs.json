@@ -1,0 +1,361 @@
+{
+ "source": "中國香港劍擊總會（HKFA）屬會會員名單",
+ "source_url": "https://www.hkfa.org.hk/TC/affiliationMembers.html",
+ "xml_url": "https://www.hkfa.org.hk/XML/affiliation_members.xml",
+ "updated": "2026-10-17",
+ "count": 44,
+ "clubs": [
+  {
+   "id": 1,
+   "name_zh": "香港劍擊學院",
+   "name_en": "Academy of Fencing (Hong Kong)",
+   "website": "http://www.academy-fencing.hk",
+   "title": "香港劍擊學院 Academy of Fencing (Hong Kong)",
+   "desc": ""
+  },
+  {
+   "id": 2,
+   "name_zh": "AFHK Fencing Equipment & Operations Ltd",
+   "name_en": "AFHK Fencing Equipment & Operations Ltd",
+   "website": "",
+   "title": "",
+   "desc": ""
+  },
+  {
+   "id": 3,
+   "name_zh": "傲智劍擊",
+   "name_en": "All Fencers Club",
+   "website": "http://www.allfencersclub.com",
+   "title": "ALL FENCERS CLUB",
+   "desc": ""
+  },
+  {
+   "id": 4,
+   "name_zh": "衝衝衝體育文化發展有限公司",
+   "name_en": "Allez Allez Allez Limited",
+   "website": "http://www.allez.com.hk",
+   "title": "Allez Fencing - Hong Kong's Premier Fencing Club | Epee, Foil, Sabre",
+   "desc": "Join Hong Kong"
+  },
+  {
+   "id": 5,
+   "name_zh": "Apex Fencing Team Limited",
+   "name_en": "Apex Fencing Team Limited",
+   "website": "",
+   "title": "",
+   "desc": ""
+  },
+  {
+   "id": 6,
+   "name_zh": "亞洲劍擊（香港）",
+   "name_en": "Asian Fencing (Hong Kong)",
+   "website": "https://www.asianfencinghk.com.hk",
+   "title": "",
+   "desc": ""
+  },
+  {
+   "id": 7,
+   "name_zh": "培星劍擊有限公司",
+   "name_en": "Blazing Star Fencing Limited",
+   "website": "http://www.blazingstarfencing.com",
+   "title": "主頁 | blazingstarfencing",
+   "desc": ""
+  },
+  {
+   "id": 8,
+   "name_zh": "Bonjour Fencing",
+   "name_en": "Bonjour Fencing",
+   "website": "http://www.fencing-lwf.com",
+   "title": "Life-wide Fencing Studio",
+   "desc": ""
+  },
+  {
+   "id": 9,
+   "name_zh": "銳翰劍撃有限公司",
+   "name_en": "Brilliant Buddies Fencing Limited",
+   "website": "",
+   "title": "",
+   "desc": ""
+  },
+  {
+   "id": 10,
+   "name_zh": "尚方集團有限公司",
+   "name_en": "Byjoss Group Limited",
+   "website": "http://www.byjoss.com",
+   "title": "",
+   "desc": ""
+  },
+  {
+   "id": 11,
+   "name_zh": "劍擊共享平台",
+   "name_en": "Co-Fencing Space",
+   "website": "http://www.cofencingspace.com",
+   "title": "Co-Fencing Space 劍擊共享平台",
+   "desc": ""
+  },
+  {
+   "id": 12,
+   "name_zh": "毅加體育策劃有限公司",
+   "name_en": "ElitePlus Sports Solutions Limited",
+   "website": "http://www.eliteplus.hk",
+   "title": "",
+   "desc": ""
+  },
+  {
+   "id": 13,
+   "name_zh": "European Fencing Club Limited",
+   "name_en": "European Fencing Club Limited",
+   "website": "",
+   "title": "",
+   "desc": ""
+  },
+  {
+   "id": 14,
+   "name_zh": "劍擊學堂(港島)有限公司",
+   "name_en": "Fencers Club Hong Kong (Island) Limited",
+   "website": "",
+   "title": "",
+   "desc": ""
+  },
+  {
+   "id": 15,
+   "name_zh": "劍擊學堂(九龍)有限公司",
+   "name_en": "Fencers Club Hong Kong (Kowloon) Limited",
+   "website": "",
+   "title": "",
+   "desc": ""
+  },
+  {
+   "id": 16,
+   "name_zh": "劍擊學堂有限公司",
+   "name_en": "Fencers Club Hong Kong Limited",
+   "website": "https://www.facebook.com/fencersclubhongkong",
+   "title": "Fencers Club Hong Kong 劍擊學堂 | Hong Kong Hong Kong",
+   "desc": "Fencers Club Hong Kong &#x528d;&#x64ca;&#x5b78;&#x5802;&#xff0c; &#x9999;&#x6e2f;. 5,217 &#x4f4d;&#x8ffd;&#x8e64;&#x8005; &#xb7; 151 &#x4eba;&#x6b63;&#x5728;&#x8ac7;&#x8ad6;&#x9019;"
+  },
+  {
+   "id": 17,
+   "name_zh": "劍館（香港）有限公司",
+   "name_en": "Fencing Hall (Hong Kong) Limited",
+   "website": "http://www.fencinghall.com",
+   "title": "FENCING HALL(H.K.) LTD",
+   "desc": "Fencinghall discover premium fencing equipment in Hong Kong — foils, épées, sabres, protective gear &amp; accessories. Trusted by fencers of all levels. Hong Kong&#39;s first fenci"
+  },
+  {
+   "id": 18,
+   "name_zh": "劍薈",
+   "name_en": "Fencing Laboratory",
+   "website": "https://www.fencing-lab.com",
+   "title": "",
+   "desc": ""
+  },
+  {
+   "id": 19,
+   "name_zh": "劍擊聯盟",
+   "name_en": "Fencing League",
+   "website": "http://fencingleague.com.hk",
+   "title": "首頁 - 劍擊聯盟",
+   "desc": ""
+  },
+  {
+   "id": 20,
+   "name_zh": "Fencing Podium",
+   "name_en": "Fencing Podium",
+   "website": "",
+   "title": "",
+   "desc": ""
+  },
+  {
+   "id": 21,
+   "name_zh": "精英劍會",
+   "name_en": "HK Elite Fencing",
+   "website": "http://www.hkelitefencing.net",
+   "title": "HK Elite Fencing",
+   "desc": ""
+  },
+  {
+   "id": 22,
+   "name_zh": "香港興趣發展有限公司",
+   "name_en": "HK Hobbies Development Co Ltd",
+   "website": "http://www.fencingformula.com",
+   "title": "【報名兒童劍擊班課程】為什麼非得學劍擊不可？劍擊能讓小朋友學到什麼，是其他運動不能給到小朋友的？ - 2026/2027更新",
+   "desc": "【兒童劍擊班課程】小朋友學劍擊能有何得著？劍擊興趣班能教會小朋友什麼？為何偏偏要報名劍擊班課程，而不是其他運動課程？其實劍擊運動獨特之處在於劍擊比賽的規則、劍擊對戰的玩法，因為劍擊運動不像一些團隊運動，也不像一些會有和局的運動，亦不是那些間接對戰的運動，劍擊是一種必定會分出勝負、直接和對手作比較的運動，正因為如此，所以能一直玩劍擊下去的人，通常都是很能夠接受"
+  },
+  {
+   "id": 23,
+   "name_zh": "Hong Kong Fencing Master Limited",
+   "name_en": "Hong Kong Fencing Master Limited",
+   "website": "http://hkfencingmaster.com",
+   "title": "Fencing Master Class by Olympian Coach | Best Fencing Club HK",
+   "desc": "Join Fencing Master, led by a 2-time Olympian, for best fencing classes in Hong Kong. All Class in English"
+  },
+  {
+   "id": 24,
+   "name_zh": "香港劍擊學校",
+   "name_en": "Hong Kong Fencing School",
+   "website": "http://www.fencing.com.hk",
+   "title": "香港劍撃學校 Hong Kong Fencing School",
+   "desc": ""
+  },
+  {
+   "id": 25,
+   "name_zh": "劍樂會聯盟俱樂部(九龍)有限公司",
+   "name_en": "I-Fencing Alliance Club (Kowloon) Limited",
+   "website": "http://i-fencing.com.hk",
+   "title": "首頁 - 劍樂會 i-fencing",
+   "desc": ""
+  },
+  {
+   "id": 26,
+   "name_zh": "劍樂會聯盟俱樂部有限公司",
+   "name_en": "I-Fencing Alliance Club Limited",
+   "website": "http://i-fencing.com.hk",
+   "title": "首頁 - 劍樂會 i-fencing",
+   "desc": ""
+  },
+  {
+   "id": 27,
+   "name_zh": "菁薈劍撃中心有限公司",
+   "name_en": "Ignite Fencing Club Company Limited",
+   "website": "http://www.ignitefencing.club",
+   "title": "菁薈劍擊中心 Ignite Fencing Club",
+   "desc": "菁薈劍擊中心 Ignite Fencing Club，香港新界區最具規模的兒童劍擊學校。由前港隊劍擊成員及專業劍擊教練團隊管理，為香港4-12歲的兒童提供優質、專業、安全的劍擊訓練。"
+  },
+  {
+   "id": 28,
+   "name_zh": "劍坊",
+   "name_en": "Kims Fencing",
+   "website": "http://www.fencing-arena.com",
+   "title": "Fencing Arena Front Page",
+   "desc": ""
+  },
+  {
+   "id": 29,
+   "name_zh": "九龍城區體育會有限公司",
+   "name_en": "Kowloon City District Sports Association Limited",
+   "website": "http://www.facebook.com/hkkcdsafc",
+   "title": "Facebook",
+   "desc": ""
+  },
+  {
+   "id": 30,
+   "name_zh": "KS Equipment And Lesson Limited",
+   "name_en": "KS Equipment And Lesson Limited",
+   "website": "",
+   "title": "",
+   "desc": ""
+  },
+  {
+   "id": 31,
+   "name_zh": "劍匯劍擊中心有限公司",
+   "name_en": "Legend Fencing Centre Company Ltd",
+   "website": "http://www.legendfencing.net",
+   "title": "首頁",
+   "desc": "首頁"
+  },
+  {
+   "id": 32,
+   "name_zh": "劍舍",
+   "name_en": "Les Escrimeurs (Hong Kong) Limited",
+   "website": "http://lehk.org",
+   "title": "Home | LEHK 劍舍",
+   "desc": ""
+  },
+  {
+   "id": 33,
+   "name_zh": "License B Limited",
+   "name_en": "License B Limited",
+   "website": "https://www.licenseb.com",
+   "title": "",
+   "desc": ""
+  },
+  {
+   "id": 34,
+   "name_zh": "劍擊全方位",
+   "name_en": "Life-wide Fencing Studio",
+   "website": "http://www.fencing-lwf.com",
+   "title": "Life-wide Fencing Studio",
+   "desc": ""
+  },
+  {
+   "id": 35,
+   "name_zh": "盈動體育會有限公司",
+   "name_en": "Move Sports Limited",
+   "website": "https://www.facebook.com/movesports.fencing",
+   "title": "盈動體育會 MoveSports",
+   "desc": "&#x76c8;&#x52d5;&#x9ad4;&#x80b2;&#x6703; MoveSports. 764 &#x4f4d;&#x8ffd;&#x8e64;&#x8005;. &#x672c;&#x9ad4;&#x80b2;&#x6703;&#x81f4;&#x529b;&#x65bc;&#x7c4c;&#x5099;&#x3001;&#x806f;&"
+  },
+  {
+   "id": 36,
+   "name_zh": "Novus Sports Limited",
+   "name_en": "Novus Sports Limited",
+   "website": "",
+   "title": "",
+   "desc": ""
+  },
+  {
+   "id": 37,
+   "name_zh": "一劍擊",
+   "name_en": "Primo Fencing Hong Kong Limited",
+   "website": "",
+   "title": "",
+   "desc": ""
+  },
+  {
+   "id": 38,
+   "name_zh": "卓毅劍擊",
+   "name_en": "Pro Fencing",
+   "website": "http://www.profencing.hk",
+   "title": "ProFencing",
+   "desc": ""
+  },
+  {
+   "id": 39,
+   "name_zh": "脈動康體有限公司",
+   "name_en": "Pulse Sports & Recreation Limited",
+   "website": "http://www.pulsesr.com",
+   "title": "",
+   "desc": ""
+  },
+  {
+   "id": 40,
+   "name_zh": "南華體育會",
+   "name_en": "South China Athletic Association",
+   "website": "http://www.scaa.org.hk",
+   "title": "",
+   "desc": ""
+  },
+  {
+   "id": 41,
+   "name_zh": "大埔劍擊",
+   "name_en": "Tai Po Fencing",
+   "website": "http://www.taipofencing.com",
+   "title": "大埔劍擊訓練班 Tai Po Fencing Course",
+   "desc": "大埔劍擊訓練班讓大埔區的小童、兒童、小朋友、學生和成人在大埔區的體育館上課和練習，有花劍、重劍和佩劍的初級、中級、高級和恆常課程。上課地點包括富亨體育館, 富善體育館, 大埔墟體育館, 大埔體育館, 太和體育館, 東昌街體育館, 大埔運動場-壁球及網球中心, 大埔體育會李福林體育館等等。Tai Po Fencing Course provides fenci"
+  },
+  {
+   "id": 42,
+   "name_zh": "拓躍劍擊有限公司",
+   "name_en": "TOT Fencing Company Limited",
+   "website": "https://www.totfencing.com",
+   "title": "拓躍劍擊TOT Fencing",
+   "desc": "拓躍劍擊（TOT Fencing），是一間位置香港島銅鑼灣的劍擊學院，劍擊教練團隊均為香港劍擊總會註冊教練，致力於推廣劍擊運動並提供專業的劍擊訓練、劍擊場地、劍擊比賽和劍擊裝備。"
+  },
+  {
+   "id": 43,
+   "name_zh": "劍藝會",
+   "name_en": "Union Fencing Club",
+   "website": "http://www.ufc.org.hk",
+   "title": "MemberApp | ufc",
+   "desc": "快來下載 MemberApp！"
+  },
+  {
+   "id": 44,
+   "name_zh": "Unique Fencing Company Limited",
+   "name_en": "Unique Fencing Company Limited",
+   "website": "",
+   "title": "",
+   "desc": ""
+  }
+ ]
+}
