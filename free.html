@@ -39,6 +39,7 @@ h1{font-size:30px;line-height:1.35;margin:10px 0 10px}
 label{display:block;font-size:13px;color:#93a1b5;margin:12px 0 6px}
 input{width:100%;background:#0b1220;border:1px solid #22314a;color:#e8edf5;padding:12px 14px;border-radius:10px;font-size:15px;outline:none}
 input:focus{border-color:#e8b23a}
+select{width:100%;background:#0b1220;border:1px solid #22314a;color:#e8edf5;padding:12px 14px;border-radius:10px;font-size:15px;outline:none}
 .btn{display:inline-block;background:#e8b23a;color:#1a1408;font-weight:800;padding:14px 22px;border-radius:10px;font-size:16px;margin-top:14px;border:0;cursor:pointer}
 .btn.wa{background:#25D366;color:#062b12}
 .btn.alt{background:#22314a;color:#e8edf5}
@@ -74,12 +75,27 @@ details p{color:#93a1b5;font-size:14px;margin-top:8px}
   </div>
 
   <div class="card">
-    <h2>領取方法</h2>
-    <label for="contact">你的 Email 或 WhatsApp（方便我哋跟進更新）</label>
-    <input id="contact" type="text" placeholder="例如：parent@email.com 或 9123 4567" autocomplete="email">
-    <button class="btn wa" onclick="sendWa()">用 WhatsApp 領取</button>
-    <a class="btn alt" href="/dl/free/competition-day-checklist.pdf" download="比賽日防DQ檢查表與裝備預算.pdf" style="margin-left:8px">直接下載 PDF</a>
-    <p class="note">撳「WhatsApp 領取」會開啟對話並自動填入訊息；我哋只會用你嘅聯絡方式發送更新與相關工具，唔會濫發。</p>
+    <h2>領取方法（留 Email 即取）</h2>
+    <form action="https://formsubmit.co/info@fencingdiary.com" method="POST">
+      <input type="hidden" name="_subject" value="新名單：免費劍擊家長工具包">
+      <input type="hidden" name="_next" value="https://fencingdiary.com/free-thanks.html">
+      <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="_template" value="table">
+      <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
+      <label for="email">你的 Email（必需）</label>
+      <input id="email" name="email" type="email" required placeholder="parent@email.com" autocomplete="email">
+      <label for="pname">稱呼（可選）</label>
+      <input id="pname" name="name" type="text" placeholder="陳太 / Thomas" autocomplete="name">
+      <label for="weapon">小朋友劍種（可選）</label>
+      <select id="weapon" name="weapon">
+        <option value="">未決定 / 未開始</option>
+        <option value="花劍 Foil">花劍 Foil</option>
+        <option value="重劍 Epee">重劍 Epee</option>
+        <option value="佩劍 Sabre">佩劍 Sabre</option>
+      </select>
+      <button class="btn" type="submit">免費領取 PDF →</button>
+    </form>
+    <p class="note">提交後會跳轉到下載頁；我哋只會用你嘅 Email 發送賽事提醒與工具更新，唔會濫發。亦可<a href="/dl/free/competition-day-checklist.pdf" download="比賽日防DQ檢查表與裝備預算.pdf">直接下載 PDF</a>。</p>
   </div>
 
   <h2 style="font-size:19px;margin-top:26px">常見問題</h2>
@@ -102,10 +118,6 @@ details p{color:#93a1b5;font-size:14px;margin-top:8px}
 </footer>
 
 <script>
-function sendWa(){
-  var v=document.getElementById('contact').value.trim();
-  var msg='我想領取免費工具包（比賽日防DQ檢查表＋初學裝備預算表）'+(v?('。我的聯絡：'+v):'')+'。';
-  window.open('https://wa.me/85296551129?text='+encodeURIComponent(msg),'_blank');
-}
+// 表單直接提交至 FormSubmit；無需前端 JS。
 </script>
 </body></html>
