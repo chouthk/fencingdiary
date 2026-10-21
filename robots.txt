@@ -1,5 +1,6 @@
 User-agent: *
 Allow: /
 Disallow: /thank-you.html
+Disallow: /free-thanks.html
 
 Sitemap: https://fencingdiary.com/sitemap.xml
